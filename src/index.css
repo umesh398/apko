@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-bg: #020617; /* slate-950 */
+  --color-brand-surface: #0f172a; /* slate-900/50 */
+  --color-brand-border: #1e293b; /* slate-800 */
+  --color-brand-accent: #4f46e5; /* indigo-600 */
+  --color-brand-text: #e2e8f0; /* slate-200 */
+  --color-brand-muted: #94a3b8; /* slate-400 */
+}
+
+@layer base {
+  body {
+    @apply bg-black text-brand-text font-sans antialiased overflow-x-hidden;
+  }
+}
+
+.mobile-container {
+  @apply max-w-md mx-auto min-h-screen bg-brand-bg flex flex-col shadow-2xl;
+}
+
+.nav-blur {
+  @apply backdrop-blur-md bg-brand-surface border-t border-brand-border;
+}
+
+.card-high-density {
+  @apply bg-brand-surface rounded-2xl border border-brand-border p-5 transition-all;
+}
+
+.label-micro {
+  @apply text-[10px] font-bold uppercase tracking-widest text-brand-muted;
+}
+
+.input-sovereign {
+  @apply w-full p-4 bg-black/40 border border-brand-border rounded-xl text-sm text-white placeholder-slate-600 outline-none focus:border-brand-accent transition-colors;
+}
+

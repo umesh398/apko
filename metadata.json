@@ -1,0 +1,14 @@
+{
+  "name": "Lumina: Growth OS",
+  "description": "An all-in-one personal system for reading, study tracking, expense management, workout planning, and mindful productivity.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "Reading & Library",
+    "Expense Tracking",
+    "Study Productivity",
+    "Workout Planning",
+    "Notes & Tasks"
+  ]
+}
